@@ -2,10 +2,12 @@ package core
 
 import (
 	"os"
+	"strings"
 )
 
 type Core struct {
-	input string
+	Input      string
+	InputLines []string
 }
 
 func (c *Core) Init() {
@@ -13,5 +15,6 @@ func (c *Core) Init() {
 	if err != nil {
 		panic(err)
 	}
-	c.input = string(data)
+	c.Input = string(data)
+	c.InputLines = strings.Split(c.Input, "\n")
 }
