@@ -5,7 +5,7 @@
 | Day | Part 1             | Part 2             |
 |-----|--------------------|--------------------|
 | 1   | :heavy_check_mark: | :heavy_check_mark: |
-| 2   |                    |                    |
+| 2   | :heavy_check_mark: | :heavy_check_mark: |
 | 3   |                    |                    |
 | 4   |                    |                    |
 | 5   |                    |                    |
