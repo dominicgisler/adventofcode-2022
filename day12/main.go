@@ -6,6 +6,10 @@ import (
 
 type Day12 struct {
 	core.Core
+	walked      []string
+	land        [][]rune
+	path        [][]int
+	lowestSteps int
 }
 
 func main() {
@@ -13,4 +17,14 @@ func main() {
 	d.Init()
 	d.part1()
 	d.part2()
+
+}
+
+func (d *Day12) contains(a []string, b string) bool {
+	for _, v := range a {
+		if v == b {
+			return true
+		}
+	}
+	return false
 }
